@@ -770,7 +770,7 @@ function install_step_1_perform()
     if (is_dir($realUploadDir)) {
         if (!is_writable($realUploadDir) || !is_readable($realUploadDir)) {
             if (!@chmod($realUploadDir, 0755)) {
-                $writeable = false;
+                // $writeable = false;
             }
         }
     } else {

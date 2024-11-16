@@ -775,7 +775,7 @@ function install_step_1_perform()
         }
     } else {
         if (!@mkdir($realUploadDir, 0755)) {
-            $writeable = false;
+            // $writeable = false;
         }
     }
 

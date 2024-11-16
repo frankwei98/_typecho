@@ -42,6 +42,6 @@ $db->addServer(array (
     'charset' => $_ENV["CHARSET"],
     'port' => $_ENV["PORT"],
     'database' => $_ENV["DATABASE"],
-    'engine' => $_ENV["ENGINE"],
+    'sslVerify' => false,
   ), Typecho_Db::READ | Typecho_Db::WRITE);
   Typecho_Db::set($db);
